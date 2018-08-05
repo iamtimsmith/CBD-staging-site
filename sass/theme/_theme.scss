@@ -10,6 +10,16 @@ $dark: #333;
   }
 }
 
+.products {
+  .card {
+    img {
+      height: 225px;
+      width: auto;
+      max-width: none;
+    }
+  }
+}
+
 .post-slider {
   a {
     text-decoration: none;
@@ -23,5 +33,14 @@ $dark: #333;
   .slick-next {
     background: rgba(0, 0, 0, 0.25) !important;
     border-radius: 100%;
+  }
+}
+
+#wrapper-footer,
+#wrapper-footer-full {
+  background: $dark;
+  color: white;
+  a {
+    color: white;
   }
 }
