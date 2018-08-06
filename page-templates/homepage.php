@@ -5,8 +5,8 @@
 <!-- Hero section -->
 <div class="jumbotron jumbotron-fluid" style="background-image:url('<?php the_field("hero_image"); ?>'); background-position:top center; background-size:cover;">
   <div class="container mt-5 mb-5 pt-5 pb-5">
-    <h1 class="display-4"><?php the_field('hero_title'); ?></h1>
-    <p class="lead"><?php the_field('hero_lead'); ?></p>
+    <h1 class="display-4" style="color:<?php the_field('hero_text_color'); ?>;"><?php the_field('hero_title'); ?></h1>
+    <p style="font-size:1.5rem; color:<?php the_field('hero_text_color'); ?>;"><?php the_field('hero_lead'); ?></p>
   </div>
 </div>
 
@@ -16,7 +16,7 @@
     <div class="col-md-4">
       <a href="<?php the_field('column_one_link'); ?>">
         <div class="card">
-          <img src="<?php the_field('column_one_image'); ?>" alt="<?php the_field('column_one_label'); ?>" class="card-img-top">
+          <img src="<?php the_field('column_one_image'); ?>" alt="<?php the_field('column_one_label'); ?>" class="card-img-bottom">
           <div class="card-body">
             <h5 class="card-title"><?php the_field('column_one_label'); ?></h5>
           </div>

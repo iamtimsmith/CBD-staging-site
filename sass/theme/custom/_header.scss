@@ -1,0 +1,17 @@
+#wrapper-navbar {
+  height: 67px;
+}
+
+.navbar {
+  background: white !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  .navbar-brand {
+    img {
+      max-height: 40px;
+      width: auto;
+    }
+  }
+  a {
+    color: $dark !important;
+  }
+}

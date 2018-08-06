@@ -69,3 +69,25 @@ require get_template_directory() . '/inc/woocommerce.php';
  * Load Editor functions.
  */
 require get_template_directory() . '/inc/editor.php';
+
+/**
+ * Custom styles based on settings
+ */
+function site_customize_css() { ?>
+	<style type="text/css">
+			.navbar {background-color:<?php echo get_theme_mod( 'header_bg' ); ?> !important;}
+			.navbar a {color:<?php echo get_theme_mod( 'headerLink' ); ?> !important;}
+			#wrapper-footer, #wrapper-footer-full {background-color:<?php echo get_theme_mod( 'footer_bg' ); ?> !important; color:<?php echo get_theme_mod( 'footer_text' ); ?> !important;}
+			#wrapper-footer a {color:<?php echo get_theme_mod( 'footer_link' ); ?> !important;}
+	</style>
+	<?php
+}
+add_action( 'wp_head', 'site_customize_css' );
+
+/**
+ * Custom WP Admin Styles
+ */
+add_action( 'admin_enqueue_scripts', 'custom_admin_styles' );
+      function custom_admin_styles() {
+        wp_enqueue_style( 'admin-css', get_template_directory_uri() . '/css/admin-style.css', false, '1.0.0' );
+       }

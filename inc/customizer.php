@@ -105,6 +105,53 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 					'priority'    => '20',
 				)
 			) );
+
+
+			// Custom Settings
+			$wp_customize->add_setting( 'header_bg', array( 'default' => '#fafafa', ) );
+			$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_bg', array(
+				'label'							=> 'Header Settings', 'WDV-245',
+				'description'				=> 'Background Color',
+				'section'						=> 'colors',
+				'settings'					=> 'header_bg',
+				'priority'          => 30,
+			)));
+		
+			$wp_customize->add_setting('headerLink', array('default','#000000',));
+			$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'headerLink', array(
+				'label'     =>  '', 'WDV-245',
+				'description'	=>	'Link Color',
+				'section'   =>  'colors',
+				'settings'  =>  'headerLink',
+				'priority'  =>  50,
+			)));
+
+			$wp_customize->add_setting( 'footer_bg');
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,'footer_bg', array(
+      'label'   =>  'Footer Settings', 'WDV-245',
+      'description'   =>  'Background Color',
+      'section'     =>  'colors',
+			'settings'    =>  'footer_bg',
+			'priority'  =>  70,
+    )));
+
+    $wp_customize->add_setting( 'footer_text');
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,'footer_text', array(
+      'label'   =>  '', 'WDV-245',
+      'description'   =>  'Text Color',
+      'section'     =>  'colors',
+			'settings'    =>  'footer_text',
+			'priority'  =>  90,
+    )));
+
+    $wp_customize->add_setting( 'footer_link');
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,'footer_link', array(
+      'label'   =>  '', 'WDV-245',
+      'description'   =>  'Link Color',
+      'section'     =>  'colors',
+			'settings'    =>  'footer_link',
+			'priority'  =>  110,
+    )));
 	}
 } // endif function_exists( 'understrap_theme_customize_register' ).
 add_action( 'customize_register', 'understrap_theme_customize_register' );

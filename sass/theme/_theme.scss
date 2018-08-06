@@ -1,46 +1,5 @@
 // This is an empty scss file for your custom styles - Please add your super duper awesome mega design styles here
 
-//Variables
-$dark: #333;
-
-.navbar {
-  background: white !important;
-  a {
-    color: $dark !important;
-  }
-}
-
-.products {
-  .card {
-    img {
-      height: 225px;
-      width: auto;
-      max-width: none;
-    }
-  }
-}
-
-.post-slider {
-  a {
-    text-decoration: none;
-    color: $dark;
-  }
-  .card-img {
-    height: 200px;
-    overflow: hidden;
-  }
-  .slick-prev,
-  .slick-next {
-    background: rgba(0, 0, 0, 0.25) !important;
-    border-radius: 100%;
-  }
-}
-
-#wrapper-footer,
-#wrapper-footer-full {
-  background: $dark;
-  color: white;
-  a {
-    color: white;
-  }
-}
+@import "custom/header";
+@import "custom/footer";
+@import "custom/front";

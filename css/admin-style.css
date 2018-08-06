@@ -1,0 +1,30 @@
+/* One Half */
+#acf-hero_image,
+#acf-hero_text_color,
+#acf-block_title,
+#acf-block_text,
+#acf-block_image,
+#acf-block_image_alt_text {
+  width: 45%;
+  float: left;
+  padding: 10px;
+  height: 300px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+#acf-column_one_label,
+#acf-column_one_image,
+#acf-column_one_link,
+#acf-column_two_label,
+#acf-column_two_image,
+#acf-column_two_link,
+#acf-column_three_label,
+#acf-column_three_image,
+#acf-column_three_link {
+  width: 30%;
+  float: left;
+  padding: 10px;
+  height: 300px;
+  overflow: hidden;
+}
