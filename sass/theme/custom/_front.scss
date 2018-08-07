@@ -11,7 +11,26 @@
 .products {
   a {
     text-decoration: none !important;
+    .card-overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      color: white;
+      text-shadow: 0 0 10px #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      opacity: 0;
+      transition: all 0.5s;
+      &:hover {
+        opacity: 0.9;
+      }
+    }
     .card {
+      position: relative;
       img {
         height: 225px;
         width: auto;

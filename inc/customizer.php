@@ -110,7 +110,7 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 			// Custom Settings
 			$wp_customize->add_setting( 'header_bg', array( 'default' => '#fafafa', ) );
 			$wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'header_bg', array(
-				'label'							=> 'Header Settings', 'WDV-245',
+				'label'							=> 'Header Settings', 'understrap',
 				'description'				=> 'Background Color',
 				'section'						=> 'colors',
 				'settings'					=> 'header_bg',
@@ -119,7 +119,7 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 		
 			$wp_customize->add_setting('headerLink', array('default','#000000',));
 			$wp_customize->add_control(new WP_Customize_Color_Control($wp_customize, 'headerLink', array(
-				'label'     =>  '', 'WDV-245',
+				'label'     =>  '', 'understrap',
 				'description'	=>	'Link Color',
 				'section'   =>  'colors',
 				'settings'  =>  'headerLink',
@@ -128,29 +128,47 @@ if ( ! function_exists( 'understrap_theme_customize_register' ) ) {
 
 			$wp_customize->add_setting( 'footer_bg');
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,'footer_bg', array(
-      'label'   =>  'Footer Settings', 'WDV-245',
+      'label'   =>  'Footer Settings', 'understrap',
       'description'   =>  'Background Color',
       'section'     =>  'colors',
 			'settings'    =>  'footer_bg',
-			'priority'  =>  70,
+			'priority'  =>  170,
     )));
 
     $wp_customize->add_setting( 'footer_text');
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,'footer_text', array(
-      'label'   =>  '', 'WDV-245',
+      'label'   =>  '', 'understrap',
       'description'   =>  'Text Color',
       'section'     =>  'colors',
 			'settings'    =>  'footer_text',
-			'priority'  =>  90,
+			'priority'  =>  190,
     )));
 
     $wp_customize->add_setting( 'footer_link');
     $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,'footer_link', array(
-      'label'   =>  '', 'WDV-245',
+      'label'   =>  '', 'understrap',
       'description'   =>  'Link Color',
       'section'     =>  'colors',
 			'settings'    =>  'footer_link',
-			'priority'  =>  110,
+			'priority'  =>  210,
+		)));
+		
+		$wp_customize->add_setting( 'body_link');
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,'body_link', array(
+      'label'   =>  'Site', 'understrap',
+      'description'   =>  'Link Color',
+      'section'     =>  'colors',
+			'settings'    =>  'body_link',
+			'priority'  =>  70,
+		)));
+		
+		$wp_customize->add_setting( 'body_accent');
+    $wp_customize->add_control(new WP_Customize_Color_Control($wp_customize,'body_accent', array(
+      'label'   =>  '', 'understrap',
+      'description'   =>  'Accent Color',
+      'section'     =>  'colors',
+			'settings'    =>  'body_accent',
+			'priority'  =>  90,
     )));
 	}
 } // endif function_exists( 'understrap_theme_customize_register' ).

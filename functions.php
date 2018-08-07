@@ -75,10 +75,12 @@ require get_template_directory() . '/inc/editor.php';
  */
 function site_customize_css() { ?>
 	<style type="text/css">
-			.navbar {background-color:<?php echo get_theme_mod( 'header_bg' ); ?> !important;}
-			.navbar a {color:<?php echo get_theme_mod( 'headerLink' ); ?> !important;}
-			#wrapper-footer, #wrapper-footer-full {background-color:<?php echo get_theme_mod( 'footer_bg' ); ?> !important; color:<?php echo get_theme_mod( 'footer_text' ); ?> !important;}
-			#wrapper-footer a {color:<?php echo get_theme_mod( 'footer_link' ); ?> !important;}
+			body a {color:<?= get_theme_mod('body_link'); ?> !important;}
+			.navbar {background-color:<?= get_theme_mod( 'header_bg' ); ?> !important;}
+			.navbar a {color:<?= get_theme_mod( 'headerLink' ); ?> !important;}
+			#wrapper-footer, #wrapper-footer-full {background-color:<?= get_theme_mod( 'footer_bg' ); ?> !important; color:<?= get_theme_mod( 'footer_text' ); ?> !important;}
+			#wrapper-footer a {color:<?= get_theme_mod( 'footer_link' ); ?> !important;}
+			.card-overlay {background:<?= get_theme_mod('body_accent'); ?>;}
 	</style>
 	<?php
 }

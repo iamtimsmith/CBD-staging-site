@@ -16,6 +16,12 @@
     <div class="col-md-4">
       <a href="<?php the_field('column_one_link'); ?>">
         <div class="card">
+        <div class="card-overlay">
+            <div>
+              <p>Check out our top 5 <?php the_field('column_one_label'); ?>s!</p>
+              <div class="btn btn-dark"><?php the_field('column_one_label'); ?> Reviews</div>
+            </div>
+          </div>
           <img src="<?php the_field('column_one_image'); ?>" alt="<?php the_field('column_one_label'); ?>" class="card-img-bottom">
           <div class="card-body">
             <h5 class="card-title"><?php the_field('column_one_label'); ?></h5>
@@ -26,6 +32,12 @@
     <div class="col-md-4">
       <a href="<?php the_field('column_two_link'); ?>">
         <div class="card">
+          <div class="card-overlay">
+            <div>
+              <p>Check out our top 5 <?php the_field('column_two_label'); ?>s!</p>
+              <div class="btn btn-dark"><?php the_field('column_two_label'); ?> Reviews</div>
+            </div>
+          </div>
           <img src="<?php the_field('column_two_image'); ?>" alt="<?php the_field('column_two_label'); ?>" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title"><?php the_field('column_two_label'); ?></h5>
@@ -36,6 +48,12 @@
     <div class="col-md-4">
       <a href="<?php the_field('column_three_link'); ?>">
         <div class="card">
+        <div class="card-overlay">
+            <div>
+              <p>Check out our top 5 <?php the_field('column_three_label'); ?>s!</p>
+              <div class="btn btn-dark"><?php the_field('column_three_label'); ?> Reviews</div>
+            </div>
+          </div>
           <img src="<?php the_field('column_three_image'); ?>" alt="<?php the_field('column_three_label'); ?>" class="card-img-top">
           <div class="card-body">
             <h5 class="card-title"><?php the_field('column_three_label'); ?></h5>

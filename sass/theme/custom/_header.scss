@@ -15,3 +15,8 @@
     color: $dark !important;
   }
 }
+
+/* Adjust navbar location when admin-bar is present */
+.admin-bar .navbar {
+  top: 32px;
+}
