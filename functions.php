@@ -80,6 +80,7 @@ function site_customize_css() { ?>
 			.navbar a {color:<?= get_theme_mod( 'headerLink' ); ?> !important;}
 			#wrapper-footer, #wrapper-footer-full {background-color:<?= get_theme_mod( 'footer_bg' ); ?> !important; color:<?= get_theme_mod( 'footer_text' ); ?> !important;}
 			#wrapper-footer a {color:<?= get_theme_mod( 'footer_link' ); ?> !important;}
+			.products .card {border:3px solid <?= get_theme_mod('body_accent'); ?>;}
 			.card-overlay {background:<?= get_theme_mod('body_accent'); ?>;}
 	</style>
 	<?php
