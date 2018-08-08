@@ -78,7 +78,14 @@
 
 <!-- Latest Blog Posts -->
 <div class="mt-5 pt-5 mb-5 pb-5">
-  <h4>Check out some of our latest blog posts!</h4>
+  <div class="d-flex">
+    <h4>Check out some of our latest blog posts!</h4>
+    <div style="margin-left:auto;">
+      <button class="btn prev"><i class="fa fa-chevron-left"></i></button>
+      <button class="btn next"><i class="fa fa-chevron-right"></i></button>
+    </div>
+  </div>
+
   <div class="post-slider row">
   <?php
 	$args = array( 'numberposts' => '6' );
@@ -99,7 +106,8 @@
       infinite: true,
       slidesToShow: 3,
       slidesToScroll: 3,
-      arrow:true
+      prevArrow: $('.prev'),
+      nextArrow: $('.next'),
     });
   });
 </script>

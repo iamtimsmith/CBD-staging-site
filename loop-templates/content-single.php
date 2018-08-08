@@ -8,21 +8,17 @@
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header">
+	<header class="entry-header mb-3">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-		<div class="entry-meta">
-
-			<?php understrap_posted_on(); ?>
-
-		</div><!-- .entry-meta -->
-
 	</header><!-- .entry-header -->
 
-	<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	<div class="post-image">
+		<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
+	</div>
 
-	<div class="entry-content">
+	<div class="entry-content mt-5 mb-3 pb-5 border-bottom">
 
 		<?php the_content(); ?>
 

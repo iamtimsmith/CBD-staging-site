@@ -14,9 +14,17 @@
   a {
     color: $dark !important;
   }
+  .navbar-toggler {
+    .navbar-toggler-icon {
+      filter: invert(1);
+    }
+  }
 }
 
-/* Adjust navbar location when admin-bar is present */
+// Admin Bar
 .admin-bar .navbar {
   top: 32px;
+}
+#wpadminbar a {
+  color: white !important;
 }
