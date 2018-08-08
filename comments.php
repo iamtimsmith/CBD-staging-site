@@ -24,39 +24,13 @@ if ( post_password_required() ) {
 
 	<?php if ( have_comments() ) : ?>
 
-		<h2 class="comments-title">
-			
-			<?php
-				$comments_number = get_comments_number();
-				if ( 1 === (int)$comments_number ) {
-					printf(
-						/* translators: %s: post title */
-						esc_html_x( 'One thought on &ldquo;%s&rdquo;', 'comments title', 'understrap' ),
-						'<span>' . get_the_title() . '</span>'
-					);
-				} else {
-					printf( // WPCS: XSS OK.
-						/* translators: 1: number of comments, 2: post title */
-						esc_html( _nx(
-							'%1$s thought on &ldquo;%2$s&rdquo;',
-							'%1$s thoughts on &ldquo;%2$s&rdquo;',
-							$comments_number,
-							'comments title',
-							'understrap'
-						) ),
-						number_format_i18n( $comments_number ),
-						'<span>' . get_the_title() . '</span>'
-					);
-				}
-			?>
-
-		</h2><!-- .comments-title -->
+		<h5 class="comments-title">Comments</h5>
 
 		<?php if ( get_comment_pages_count() > 1 && get_option( 'page_comments' ) ) : // are there comments to navigate through. ?>
 			
 			<nav class="comment-navigation" id="comment-nav-above">
 				
-				<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'understrap' ); ?></h1>
+				<h5 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'understrap' ); ?></h5>
 				
 				<?php if ( get_previous_comments_link() ) { ?>
 					<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments',
@@ -86,7 +60,7 @@ if ( post_password_required() ) {
 			
 			<nav class="comment-navigation" id="comment-nav-below">
 				
-				<h1 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'understrap' ); ?></h1>
+				<h5 class="screen-reader-text"><?php esc_html_e( 'Comment navigation', 'understrap' ); ?></h5>
 				
 				<?php if ( get_previous_comments_link() ) { ?>
 					<div class="nav-previous"><?php previous_comments_link( __( '&larr; Older Comments',

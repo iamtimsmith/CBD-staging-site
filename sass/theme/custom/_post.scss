@@ -1,6 +1,6 @@
 .post {
   .post-image {
-    height: 400px;
+    max-height: 400px;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -10,6 +10,12 @@
     }
   }
   .understrap-read-more-link {
-    display: none !important;
+    display: none !important; 
+  }
+}
+
+.comments-area {
+  .comment-reply-title {
+    font-size:1.25rem;
   }
 }

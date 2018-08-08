@@ -8,6 +8,7 @@
 ?>
 
 <article <?php post_class('border-bottom pt-5 pb-4'); ?> id="post-<?php the_ID(); ?>">
+
 	<div class="post-image">
 		<?php echo get_the_post_thumbnail( $post->ID, 'large' ); ?>
 	</div>

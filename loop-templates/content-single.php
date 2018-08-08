@@ -8,9 +8,13 @@
 ?>
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-	<header class="entry-header mb-3">
+	<header class="entry-header mb-3 border-bottom">
 
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<p class="d-flex">
+			<span>By: <?php the_author(); ?></span>
+			<span class="ml-auto small"><?php the_date(); ?></span>
+		</p>
 
 	</header><!-- .entry-header -->
 
