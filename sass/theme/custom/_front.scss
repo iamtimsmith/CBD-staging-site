@@ -65,6 +65,18 @@
   content: "\f00b" !important;
 }
 
+@media (min-width:767px) {
+  .products {
+    .card {
+      margin-bottom:20px;
+      img {
+        height:auto!important;
+        width:100%!important;;
+      }
+    }
+  }
+}
+
 @media (min-width:768px) and (max-width:991px) {
   .products {
     .card {
